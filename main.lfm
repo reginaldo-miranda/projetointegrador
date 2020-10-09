@@ -1,0 +1,269 @@
+object Form1: TForm1
+  Left = 256
+  Height = 240
+  Top = 145
+  Width = 597
+  Caption = 'Form1'
+  LCLVersion = '2.0.10.0'
+  object ParadoxDataset1: TParadoxDataset
+    TableName = 'C:\dados\arquivos_teste\MOVEST.DB'
+    Active = True
+    FieldDefs = <    
+      item
+        Name = 'Ai'
+        DataType = ftAutoInc
+        Precision = -1
+        Size = 4
+      end    
+      item
+        Name = 'ControleTipo'
+        DataType = ftString
+        Precision = -1
+        Size = 3
+      end    
+      item
+        Name = 'Controle'
+        DataType = ftInteger
+        Precision = -1
+        Size = 4
+      end    
+      item
+        Name = 'LancData'
+        DataType = ftDate
+        Precision = -1
+      end    
+      item
+        Name = 'LancTipo'
+        DataType = ftInteger
+        Precision = -1
+        Size = 4
+      end    
+      item
+        Name = 'CodProd'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'CodCad'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'CodVend'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'Empresa'
+        DataType = ftInteger
+        Precision = -1
+        Size = 4
+      end    
+      item
+        Name = 'LancQtde'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'LancPreco'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'Promocao'
+        DataType = ftSmallint
+        Precision = -1
+        Size = 2
+      end    
+      item
+        Name = 'Local'
+        DataType = ftInteger
+        Precision = -1
+        Size = 4
+      end    
+      item
+        Name = 'Etiquetar'
+        DataType = ftSmallint
+        Precision = -1
+        Size = 2
+      end    
+      item
+        Name = 'Grupo'
+        DataType = ftString
+        Precision = -1
+        Size = 6
+      end    
+      item
+        Name = 'Tipo'
+        DataType = ftString
+        Precision = -1
+        Size = 6
+      end    
+      item
+        Name = 'VlrICMS'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'VlrIPI'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'Doc'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'DiaCustoMedio'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'DiaPrecoVenda'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'DiaPrecoCusto'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'LancDesc'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'CodCond'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'AltData'
+        DataType = ftDate
+        Precision = -1
+      end    
+      item
+        Name = 'AltUsuario'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end    
+      item
+        Name = 'Id1'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'Id2'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'LocalO'
+        DataType = ftInteger
+        Precision = -1
+        Size = 4
+      end    
+      item
+        Name = 'LocalD'
+        DataType = ftInteger
+        Precision = -1
+        Size = 4
+      end    
+      item
+        Name = 'NFechamento'
+        DataType = ftInteger
+        Precision = -1
+        Size = 4
+      end    
+      item
+        Name = 'Comissao'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'NNota'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'CtrlParcial'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'AliqICMS'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'AliqIPI'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'RedBaseICMS'
+        DataType = ftFloat
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'Hora'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'NTransmissao'
+        DataType = ftInteger
+        Precision = -1
+        Size = 4
+      end    
+      item
+        Name = 'NumLote'
+        DataType = ftString
+        Precision = -1
+        Size = 15
+      end>
+    Left = 75
+    Top = 36
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=ON'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'movest'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\projetoIntegrador\libmysql.dll'
+    Left = 192
+    Top = 40
+  end
+end
